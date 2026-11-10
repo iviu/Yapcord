@@ -6,7 +6,7 @@
 
 import { ApplicationCommandInputType, ApplicationCommandOptionType, findOption, sendBotMessage } from "@api/Commands";
 import { definePluginSettings } from "@api/Settings";
-import { SlipcordDevs } from "@utils/constants";
+import { EquicordDevs } from "@utils/constants";
 import { Logger } from "@utils/Logger";
 import definePlugin, { OptionType } from "@utils/types";
 import { Button, React, Select, showToast, TextInput, useCallback, useEffect, useState } from "@webpack/common";
@@ -261,7 +261,7 @@ export default definePlugin({
     name: "AIBoyfriend",
     description: "A /boyfriend command backed by Groq, with a configurable system prompt and per-channel memory.",
     tags: ["Chat", "Fun"],
-    authors: [SlipcordDevs.tired55],
+    authors: [Yapcord],
     dependencies: ["CommandsAPI"],
     settings,
     commands: [
